@@ -1,0 +1,7 @@
+@layer layout {
+  body {
+    display: grid;
+    grid-template-rows: minmax(3.75rem, auto) 1fr auto;
+    min-block-size: 100dvh;
+  }
+}
