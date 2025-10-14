@@ -1,0 +1,52 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    height: calc(100vh - 2em);
+}
+
+.box {
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    >span {
+        background-color: white;
+        padding: 0.5em 1em;
+        border-radius: 0.3em;
+        font-size: 1.2em;
+    }
+
+    &.box--primary {
+        background-color: var(--clb-primary);
+    }
+
+    .box--secondary {
+        background-color: var(--clb-secondary);
+    }
+
+    &.box--success {
+        background-color: var(--clb-success);
+    }
+
+    &.box--info {
+        background-color: var(--clb-info);
+    }
+
+    &.box--warning {
+        background-color: var(--clb-warning);
+    }
+
+    &.box--danger {
+        background-color: var(--clb-danger);
+    }
+
+    &.box--light {
+        background-color: var(--clb-light);
+    }
+
+    &.box--dark {
+        background-color: var(--clb-dark);
+    }
+}
