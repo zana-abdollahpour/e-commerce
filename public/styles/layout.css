@@ -1,7 +1,35 @@
 @layer layout {
   body {
     display: grid;
-    grid-template-rows: minmax(3.75rem, auto) 1fr auto;
-    min-block-size: 100dvh;
+    grid-template-rows: minmax(60px, auto) 1fr auto;
+    min-block-size: 100vh;
+  }
+
+  :where(.container) {
+    max-inline-size: var(--container-md);
+    margin-inline: auto;
+    padding-inline: clamp(
+      var(--container-gutter-min),
+      4vw,
+      var(--container-gutter-max)
+    );
+
+    inline-size: 100%;
+  }
+
+  :where(.container-full) {
+    max-inline-size: unset;
+  }
+
+  :where(.container--xs) {
+    max-inline-size: var(--container-xs);
+  }
+
+  :where(.container--sm) {
+    max-inline-size: var(--container-sm);
+  }
+
+  :where(.container--lg) {
+    max-inline-size: var(--container-lg);
   }
 }
