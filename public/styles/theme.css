@@ -1,0 +1,55 @@
+@layer theme {
+  /* Primitive variables */
+  :root {
+    --clb-blue: oklch(55.057% 0.17032 259.748);
+    --clb-pink: oklch(0.67 0.2 17.35 / 1);
+    --clb-red: oklch(0.63 0.22 25.92 / 1);
+    --clb-yellow: oklch(0.76 0.16 57.71 / 1);
+    --clb-green: oklch(0.68 0.15 154.01 / 1);
+    --clb-black: oklch(0 0 0 / 1);
+    --clb-white: oklch(1 0 0 / 1);
+    --clb-gray: oklch(0.55 0.02 264.4 / 1);
+
+    --font-scale-sm: 0.875;
+    --font-scale-md: 1;
+    --font-scale-lg: 1.125;
+    --font-scale-xl: 1.3125;
+    --font-scale-xxl: 1.625;
+    --font-scale-3xl: 2;
+
+    --font-size-base-min: calc(1rem * var(--font-scale-sm));
+    --font-size-base-mid: calc(1rem * var(--font-scale-md));
+    --font-size-base-max: calc(1rem * var(--font-scale-lg));
+  }
+
+  /* Semantic variables */
+  :root {
+    --clb-primary: var(--clb-pink);
+    --clb-secondary: var(--clb-gray);
+    --clb-success: var(--clb-green);
+    --clb-info: var(--clb-blue);
+    --clb-warning: var(--clb-yellow);
+    --clb-danger: var(--clb-red);
+    --clb-light: var(--clb-white);
+    --clb-dark: oklch(0.09 0.01 285.17 / 1);
+
+    --container-xs: 46rem; /* 736px */
+    --container-sm: 64rem; /* 1024px */
+    --container-md: 80rem; /* 1280px */
+    --container-lg: 96rem; /* 1536px */
+
+    --container-gutter-min: 16px;
+    --container-gutter-max: 32px;
+
+    --font-size-base: var(--font-size-base-min);
+
+    --font-sm: calc(var(--font-size-base) * var(--font-scale-sm));
+    --font-md: calc(var(--font-size-base) * var(--font-scale-md));
+    --font-lg: calc(var(--font-size-base) * var(--font-scale-lg));
+    --font-xl: calc(var(--font-size-base) * var(--font-scale-xl));
+    --font-xxl: calc(var(--font-size-base) * var(--font-scale-xxl));
+    --font-3xl: calc(var(--font-size-base) * var(--font-scale-3xl));
+
+    --font-yekanbakh: "yekanbakh";
+  }
+}
