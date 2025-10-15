@@ -50,6 +50,6 @@
     --font-xxl: calc(var(--font-size-base) * var(--font-scale-xxl));
     --font-3xl: calc(var(--font-size-base) * var(--font-scale-3xl));
 
-    --font-yekanbakh: "yekanbakh";
+    --font-vazirmatn: "vazirmatn";
   }
 }

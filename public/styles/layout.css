@@ -8,13 +8,12 @@
   :where(.container) {
     max-inline-size: var(--container-md);
     margin-inline: auto;
+    inline-size: 100%;
     padding-inline: clamp(
       var(--container-gutter-min),
       4vw,
       var(--container-gutter-max)
     );
-
-    inline-size: 100%;
   }
 
   :where(.container-full) {

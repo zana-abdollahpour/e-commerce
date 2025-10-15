@@ -1,0 +1,25 @@
+@layer utilities {
+  .text-sm {
+    font-size: var(--font-sm);
+  }
+
+  .text-md {
+    font-size: var(--font-md);
+  }
+
+  .text-lg {
+    font-size: var(--font-lg);
+  }
+
+  .text-xl {
+    font-size: var(--font-xl);
+  }
+
+  .text-xxl {
+    font-size: var(--font-xxl);
+  }
+
+  .text-3xl {
+    font-size: var(--font-3xl);
+  }
+}
